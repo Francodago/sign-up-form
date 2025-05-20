@@ -1,0 +1,127 @@
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(./assets/fonts/poppins/poppins-semibolditalic-webfont.woff2) format('woff2'),
+    url(./assets/fonts/poppins/poppins-semibolditalic-webfont.woff) format('woff');
+    font-weight:600;
+    font-style: italic;
+}
+body{
+height: 100vh;
+ font-family:'system-ui', 'sans-serif';
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.background{
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./assets/images/waterfall.jpg);
+    height: 100vh;    
+    width: 100vw;
+    position:fixed;
+    top: 0;
+}
+.container{
+    min-height: 80vh;
+    width: 80%;
+    padding-left:.5rem;
+    padding-right: .5rem;
+    margin-top:1.875rem;
+    display: flex;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+.sidebar-left{
+    width: 50%;
+    min-height: 100%;
+    padding: 3rem;
+    color: white;
+    background-size: cover;
+    background-position: 50%;
+    background-image: linear-gradient(rgba(78, 95, 59, 0.815),
+    rgba(78, 95, 59, 0.815)), url(./assets/images/waterfall.jpg);
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   text-align: center;
+
+
+}
+.sidebar-left > h1{
+    font-family: 'Poppins';
+    font-size: 6rem;
+    margin-top: 4rem;
+    font-weight: 600;
+    font-style: italic;
+}
+.sidebar-left >p{
+    color: white;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+.sidebar-right{
+    min-height: 100%;
+    width: 50%;
+    background-color: white;
+    padding: 3.5rem;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.sidebar-right >h2{
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin: 2rem;
+}
+.sidebar-right p{
+    margin: 2rem;
+}
+a:link{
+    color: lightgreen;
+    text-decoration: none;
+}
+.formGroup{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+}
+.first-name, .email, .password{
+    width: 80%;
+    border: 2px solid black;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+}
+
+.error{
+  color: #b91c1c;        
+  padding-top: 0.5rem;  
+  padding-bottom: 0.5rem;
+}
+.submit-btn{
+    padding: 0.5rem 2rem;        
+    margin-top: 1rem;           
+    background-color: #4ade80;   
+    width: 30%;                
+    border-radius: 20px;      
+    color: black; 
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);  
+    border: none;
+    font: inherit;
+    cursor: pointer;
+
+  
+}
+.input-error {
+    border: 2px solid red;
+  }
+  
+  .input-success {
+    border: 2px solid green;
+  }
+

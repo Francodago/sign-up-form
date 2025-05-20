@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="container">
+      <div class="sidebar-left">
+        <h1>Fitness Lab</h1>
+        <p>
+          Join us today and unlock exclusive features, updates, and a
+          personalized<br />experience — all in one simple step!
+        </p>
+      </div>
+      <div class="sidebar-right">
+        <h2>Register</h2>
+        <p class="">
+          Already have an account? <a href="#">Login here</a> instead.
+        </p>
+        <form id="registration-form">
+          <div class="formGroup">
+            <label for="first_name"> First Name</label>
+            <input
+              type="text"
+              id="first_name"
+              class="first-name"
+              required
+              minlength="2"
+              custommaxlength="10"
+            />
+            <div class="error"></div>
+          </div>
+          <div class="formGroup">
+            <label for="email"> Email</label>
+            <input
+              type="email"
+              id="email"
+              class="email"
+              required
+              pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"
+            />
+            <div class="error"></div>
+          </div>
+          <div class="formGroup">
+            <label for="password"> Password</label>
+            <input
+              type="password"
+              id="password"
+              class="password"
+              required
+              minlength="8"
+            />
+            <div class="error"></div>
+          </div>
+          <div class="formGroup">
+            <label for="password"> Confirm password</label>
+            <input
+              type="password"
+              id="confirm-password"
+              class="password"
+              required
+              minlength="8"
+              match="password"
+            />
+            <div class="error"></div>
+          </div>
+          <button type="submit" class="submit-btn">Sign up</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
